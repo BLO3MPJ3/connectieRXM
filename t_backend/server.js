@@ -11,7 +11,7 @@ applicatie.use(express.urlencoded({ limit: "15mb", extended: true })); //herkenn
 var port = 5000; //poort definieren
 var url = "mongodb://127.0.0.1:27017/shop"; //route naar db
 
-app.listen(port, function () {
+applicatie.listen(port, function () {
   console.log("Server is running on Port...: " + port);
 }); //melding dat server actief is
 
